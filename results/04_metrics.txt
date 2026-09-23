@@ -1,0 +1,26 @@
+              precision    recall  f1-score   support
+
+         adl     0.9989    0.9999    0.9994     20320
+        fall     0.9928    0.9233    0.9568       300
+
+    accuracy                         0.9988     20620
+   macro avg     0.9959    0.9616    0.9781     20620
+weighted avg     0.9988    0.9988    0.9988     20620
+
+
+Confusion matrix (rows=actual, cols=predicted):
+           pred_adl  pred_fall
+actual_adl    20318         2
+actual_fall      23       277
+
+Top 10 features by importance:
+svm_max                0.136011
+ax1_range              0.100254
+az1_std                0.083387
+svm_std                0.080944
+ax1_std                0.069302
+ay1_range              0.055403
+az1_range              0.049818
+ay1_sma                0.047764
+ax1_spectral_energy    0.036210
+gx_rms                 0.030789
